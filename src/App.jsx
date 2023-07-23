@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import Info from "./components/Info";
 import Services from "./components/Services";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Quotes from "./components/Quotes";
 function App() {
   return (
     <>
@@ -12,6 +12,7 @@ function App() {
       <Hero />
       <Info />
       <Services />
+      <Quotes />
     </>
   );
 }
