@@ -36,7 +36,7 @@ let data = [
 function Services() {
   return (
     <>
-    <div id="services_container_header">
+    <div id="services_container_header_top">
       <h1>Our Counselling Services</h1>
       <p>You’re in safe hands.</p> 
       <p>We’ve been providing counselling and support for over 55 years.</p>
@@ -68,6 +68,10 @@ function Services() {
           </Card>
         ))}
       </div>
+      <div id="services_container_header_bottom">
+      <p>Looking for something else?</p>
+      <button id="info_button_services">Contact Us</button>
+    </div>
     </>
   );
 }

@@ -10,6 +10,10 @@ body {
   align-items: center;
   width: 100%;
   height: 90px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 }
 
 .navbar_menu {
