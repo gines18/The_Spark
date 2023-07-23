@@ -1,0 +1,9 @@
+#hero_container{
+    display: flex;
+    justify-content: center;
+}
+
+#main_img{
+    width: 85%;
+    
+}

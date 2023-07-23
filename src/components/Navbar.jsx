@@ -23,7 +23,7 @@ function Navbar() {
                     Training
                 </li>
                 <li>
-                    About US
+                    About Us
                 </li>
                 <li id='navbar_button'>
                   Donate
