@@ -14,7 +14,7 @@ function Navbar() {
         <div className='navbar_menu'>
             <ul>
                 <li>
-                    <img src="" alt="" />
+                    <img src='./loupe.png' style={{width: "11px"}} alt="" />
                 </li>
                 <li>
                     Counseling
@@ -25,8 +25,8 @@ function Navbar() {
                 <li>
                     About US
                 </li>
-                <li>
-                    Donate
+                <li id='navbar_button'>
+                  Donate
                 </li>
             </ul>
         </div>

@@ -10,28 +10,50 @@ body {
   align-items: center;
   width: 100%;
   height: 90px;
-  background-color: aqua;
 }
 
 .navbar_menu {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 400px;
-  justify-content: space-evenly;
+  width: 700px;
+  justify-content: space-around;
 
   margin: 0;
   height: 90px;
-
-  background-color: brown;
 }
 
 .navbar_menu ul {
+  display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
+  width: 600px;
 }
 
 .navbar_menu li {
   display: inline;
   margin: 15px;
+}
+
+ul {
+  border-color: white;
+}
+
+li {
+  padding: 15px;
+}
+
+#navbar_button {
+  background-color: #e71830;
+  width: 70px;
+  border-radius: 4px;
+  color: azure;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+
+#navbar_button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
 }
