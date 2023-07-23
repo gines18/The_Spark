@@ -36,6 +36,11 @@ let data = [
 function Services() {
   return (
     <>
+    <div id="services_container_header">
+      <h1>Our Counselling Services</h1>
+      <p>You’re in safe hands.</p> 
+      <p>We’ve been providing counselling and support for over 55 years.</p>
+    </div>
       <div id="services_container">
         {data.map((item) => (
           <Card sx={{ maxWidth: 345, minHeight: 340 }} >

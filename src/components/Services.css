@@ -1,8 +1,22 @@
+#services_container_header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E9EAEC;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 30px;
+}
 #services_container{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     flex-wrap: wrap;
+    background-color: #E9EAEC;
+    margin-bottom: 40px;
+    padding: 20px;
 }
