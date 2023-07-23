@@ -4,7 +4,9 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
-import './Services.css'
+import "./Services.css";
+
+import {useState} from 'react'
 
 let data = [
   {
@@ -34,16 +36,23 @@ let data = [
 ];
 
 function Services() {
+
+  const [showDivBox, setShowDivBox] = useState(false);
+  const handleButtonClick = () => {
+    setShowDivBox(!showDivBox);
+  };
+
+
   return (
     <>
-    <div id="services_container_header_top">
-      <h1>Our Counselling Services</h1>
-      <p>You’re in safe hands.</p> 
-      <p>We’ve been providing counselling and support for over 55 years.</p>
-    </div>
+      <div id="services_container_header_top">
+        <h1>Our Counselling Services</h1>
+        <p>You’re in safe hands.</p>
+        <p>We’ve been providing counselling and support for over 55 years.</p>
+      </div>
       <div id="services_container">
         {data.map((item) => (
-          <Card sx={{ maxWidth: 345, minHeight: 340 }} >
+          <Card sx={{ maxWidth: 345, minHeight: 340 }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -69,11 +78,23 @@ function Services() {
         ))}
       </div>
       <div id="services_container_header_bottom">
-      <p>Looking for something else?</p>
-      <button id="info_button_services">Contact Us</button>
-    </div>
+        <p>Looking for something else?</p>
+        <button id="info_button_services"  onClick={handleButtonClick}>
+          Contact Us
+        </button>
+      </div>
+
+      {showDivBox && 
+      
+      <div className="popup">
+       <p id="services_button" onClick={handleButtonClick}>x</p>
+        <p>  This includes a free and confidential counselling helpline on 0808 802 0088.</p>
+        
+        </div>}
     </>
   );
 }
 
 export default Services;
+
+

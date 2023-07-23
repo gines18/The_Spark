@@ -29,6 +29,7 @@
   padding-top: 30px;
   margin-bottom: 30px;
   padding-bottom: 30px;
+  position: relative;
 }
 
 
@@ -44,5 +45,29 @@
 
   #info_button_services:hover{
   transform: scale(1.1);
+  cursor: pointer;
+}
+
+.popup{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 55%;
+  height: 80px;
+  margin-bottom: 30px;
+  background-color: #e71830;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+ position: fixed;
+  top: 400px;
+  left: 300px;
+z-index: 1;
+
+}
+
+#services_button{
+ 
+  align-self: flex-end;
   cursor: pointer;
 }
