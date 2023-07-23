@@ -38,7 +38,7 @@ function Services() {
     <>
       <div id="services_container">
         {data.map((item) => (
-          <Card sx={{ maxWidth: 345, maxHeight: 500 }} >
+          <Card sx={{ maxWidth: 345, minHeight: 340 }} >
             <CardActionArea>
               <CardMedia
                 component="img"
