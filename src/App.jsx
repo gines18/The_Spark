@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Quotes from "./components/Quotes";
 import Gallery from "./components/Gallery";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Quotes />
       <Gallery />
+      <Blog />
     </>
   );
 }

@@ -2,8 +2,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
-    padding: 30px;
+    grid-gap: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     color: white;
     grid-template-areas: 
     " img1 img1 img2 img4"
