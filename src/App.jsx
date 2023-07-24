@@ -9,6 +9,7 @@ import Gallery from "./components/Gallery";
 import Blog from "./components/Blog";
 import Logo from "./components/Logo";
 import Help from "./components/Help";
+import Numbers from "./components/Numbers";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Blog />
       <Logo />
       <Help />
+      <Numbers />
     </>
   );
 }
