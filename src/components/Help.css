@@ -9,6 +9,9 @@ border-radius: 10px;
 background-color: #e71830;
 gap: 170px;
 color: white;
+position: relative;
+z-index: 1;
+
 }
 
 #help_button{

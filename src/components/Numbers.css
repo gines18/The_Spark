@@ -6,6 +6,10 @@
     gap: 40px;
     flex-wrap: wrap;
    background-color: black;
+   position: relative;
+   top:-45px;
+   margin-bottom: 0;
+  
 }
 
 #numbers_data{
