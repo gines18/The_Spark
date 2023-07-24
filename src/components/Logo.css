@@ -1,0 +1,14 @@
+#logo_container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+   
+    padding: 20px;
+}
+
+#logo_container > img {
+    min-height: 100px;
+}
