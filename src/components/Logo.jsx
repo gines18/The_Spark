@@ -5,7 +5,6 @@ function Logo() {
   return (
    <>  
 <div id="logo_container">
-
   <img src="one.png" alt="" />
   <img src="two.png" alt="" />
   <img src="three.png" alt="" />
