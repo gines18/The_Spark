@@ -8,6 +8,7 @@ import Quotes from "./components/Quotes";
 import Gallery from "./components/Gallery";
 import Blog from "./components/Blog";
 import Logo from "./components/Logo";
+import Help from "./components/Help";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Gallery />
       <Blog />
       <Logo />
+      <Help />
     </>
   );
 }
