@@ -10,6 +10,8 @@ import Blog from "./components/Blog";
 import Logo from "./components/Logo";
 import Help from "./components/Help";
 import Numbers from "./components/Numbers";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
       <Logo />
       <Help />
       <Numbers />
+      <Footer />
     </>
   );
 }
