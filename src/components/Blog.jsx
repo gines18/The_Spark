@@ -66,10 +66,11 @@ function Blog() {
               <Typography variant="body2" color="text.secondary">
               {item.text}
               </Typography>
-              <br />
+             
               <Typography variant="body2" color="text.secondary">
               <a href={item.link} target="_blank">Read more</a>
               </Typography>
+              <br />
               <Typography variant="body2" color="text.secondary">
             {item.date}
               </Typography>

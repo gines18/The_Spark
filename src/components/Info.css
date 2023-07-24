@@ -21,6 +21,7 @@
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
 }
+
 #info_button_about {
   margin-top: 30px;
   margin-right: 5px;
@@ -42,3 +43,4 @@
   transform: scale(1.1);
   cursor: pointer;
 }
+
