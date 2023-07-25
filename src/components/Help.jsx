@@ -2,6 +2,11 @@ import React from "react";
 import "./Help.css";
 
 function Help() {
+
+  const handleCall = () => {
+    window.location.href = `tel:${123456789}`;
+  };
+
   return (
     <>
       <div id="help_container">
@@ -15,7 +20,7 @@ function Help() {
         </div>
 
         <div id="help_button">
-          <p>Call Now</p>
+          <p onClick={handleCall}>Call Now</p>
         </div>
       </div>
     </>
