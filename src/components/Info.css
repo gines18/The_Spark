@@ -5,6 +5,14 @@
   margin-top: 30px;
   margin-bottom: 50px;
 }
+@media (max-width: 390px) {
+  #info_container {
+    padding: 35px !important ;
+    margin: 0;
+  }
+
+}
+
 @media (max-width: 768px) {
   #info_container {
     display: flex;
