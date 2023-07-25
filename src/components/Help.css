@@ -25,6 +25,18 @@ z-index: 1;
     border-radius: 6px;
 }
 
+@media (max-width: 768px){
+    #help_container{
+       display: flex;
+       flex-direction: column;
+      gap: 0px;
+    }
+    #help_button{
+        align-self: flex-end;
+    }
+}
+
+
 #help_button p{
 display: flex;
 justify-content: center;
