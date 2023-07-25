@@ -62,8 +62,8 @@ li {
 }
 
 @media (max-width: 390px) {
-    li {
-      margin: 0 !important;
+  li {
+    margin: 0 !important;
   }
 }
 
@@ -83,6 +83,7 @@ li {
     background-color: white;
     z-index: 5;
   }
+  
   .navbar_menu {
     display: flex;
     justify-content: center;

@@ -1,5 +1,5 @@
 import React from "react";
-import './Numbers.css'
+import "./Numbers.css";
 
 let data_numbers = [
   {

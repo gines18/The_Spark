@@ -1,26 +1,23 @@
-#numbers_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 40px;
-    flex-wrap: wrap;
-   background-color: black;
-  
-  
+#numbers_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: black;
 }
 
-#numbers_data{
-    flex: 1;
-    min-width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    min-width: 200px;
-    text-align: center;
-    color: white;
-    padding: 50px;
+#numbers_data {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 200px;
+  text-align: center;
+  color: white;
+  padding: 50px;
 }
-

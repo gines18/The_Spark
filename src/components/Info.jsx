@@ -9,8 +9,8 @@ function Info() {
           <h1>Igniting Change</h1>
           <p>
             The Spark provides counselling and mental health support services
-            for individuals, <br /> couples, families, children and young people in
-            Scotland.
+            for individuals, <br /> couples, families, children and young people
+            in Scotland.
           </p>
           <p>
             This includes a free and confidential counselling helpline on
@@ -20,16 +20,13 @@ function Info() {
             <button id="info_button_about">About Us</button>
           </p>
         </div>
-     
 
-      <div>
-        <img id="info_img" src="fireworks.png" alt="" />
-      </div>
+        <div>
+          <img id="info_img" src="fireworks.png" alt="" />
+        </div>
       </div>
     </>
   );
 }
 
 export default Info;
-
-

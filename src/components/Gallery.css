@@ -1,19 +1,18 @@
-#gallery_container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    color: white;
-    grid-template-areas: 
+#gallery_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  grid-template-areas:
     " img1 img1 img2 img4"
-    " img1 img1 img3 img5"
-    ;
+    " img1 img1 img3 img5";
 }
 
-@media (max-width: 768px){
-  #gallery_container{
+@media (max-width: 768px) {
+  #gallery_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -21,90 +20,87 @@
     padding-left: 30px;
     padding-right: 30px;
     color: white;
-    grid-template-areas: 
-    " img1 img1 img1 img1"
-    " img1 img1 img1 img1"
-    " img2 img2 img3 img3"
-    " img4 img4 img5 img5"
-    ;
+    grid-template-areas:
+      " img1 img1 img1 img1"
+      " img1 img1 img1 img1"
+      " img2 img2 img3 img3"
+      " img4 img4 img5 img5";
   }
 }
 
 #img1 {
-    height: 400px;
-    grid-area: img1;
-    background-image: url('./img1grid.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  #img2 {
-    grid-area: img2;
-    background-image: url('./img2grid.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  #img3 {
-    grid-area: img3;
-    background-image: url('./img3grid.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  #img4 {
-    grid-area: img4;
-    background-image: url('./img4grid.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  #img5 {
-    grid-area: img5;
-    background-image: url('./img5grid.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  height: 400px;
+  grid-area: img1;
+  background-image: url("./img1grid.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  #gallery_container_header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+#img2 {
+  grid-area: img2;
+  background-image: url("./img2grid.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img3 {
+  grid-area: img3;
+  background-image: url("./img3grid.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img4 {
+  grid-area: img4;
+  background-image: url("./img4grid.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img5 {
+  grid-area: img5;
+  background-image: url("./img5grid.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gallery_container_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+#gallery_container_header p {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  #gallery_container_header p {
+    text-align: center;
   }
+}
 
-  #gallery_container_header p{
-    color: red;
-  }
+#gallery_container div {
+  font-size: 1.3rem;
+  position: relative;
+}
 
-  @media (max-width: 768px){
-    #gallery_container_header p{
-      text-align: center;
-    }
+#gallery_container p {
+  position: relative;
+  top: 150px;
+  left: 20px;
+}
 
-  }
+#grid_description_img {
+  position: relative;
+  top: 355px;
+  left: 20px;
+}
 
-  #gallery_container div{
-    font-size: 1.3rem;
-    position: relative;
-
-  }
-
-  #gallery_container p {
-    position: relative;
-    top: 150px;
-    left: 20px;
-  }
-
-  #grid_description_img{
-    position: relative;
-    top: 355px;
-    left: 20px;
-  }
-
-  #gallery_container > div:hover{
-    transform: scale(1.01);
-    opacity: 0.7;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+#gallery_container > div:hover {
+  transform: scale(1.01);
+  opacity: 0.7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

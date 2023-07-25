@@ -6,7 +6,6 @@ let data_gallery = [
     header: "TRAINING THE NEXT GENERATION OF COUNSELLORS",
     text: "Our Courses & Training",
   },
-  
 ];
 
 function Gallery() {

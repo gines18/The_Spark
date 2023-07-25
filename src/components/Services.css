@@ -65,8 +65,8 @@
   cursor: pointer;
 }
 
-@media (max-width: 390px){
-  #services_container_header_top{
+@media (max-width: 390px) {
+  #services_container_header_top {
     text-align: center;
   }
 }

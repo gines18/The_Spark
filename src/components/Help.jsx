@@ -9,7 +9,8 @@ function Help() {
           <h1>Need Help Now?</h1>
           <p>
             The Counselling Helpline is here when you want to talk to someone
-            about  <br /> your mental health, your emotions or a relationship problem.
+            about <br /> your mental health, your emotions or a relationship
+            problem.
           </p>
         </div>
 

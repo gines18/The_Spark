@@ -34,31 +34,30 @@
     #c1b6bb 5px,
     #e5e5f7 5px,
     #e5e5f7 25px
-    );
-  }
-  
-  #quote_img {
-    width: 200px;
-  }
-  
-  @media (max-width: 390px){
-    #container_quotes{
-      font-size: 0.7rem;
-    }
-    #quote_img{
-      width: 150px;
+  );
+}
 
-    }
+#quote_img {
+  width: 200px;
+}
+
+@media (max-width: 390px) {
+  #container_quotes {
+    font-size: 0.7rem;
   }
-  
-  @media (max-width: 1024px){
-  #container_quotes{
+  #quote_img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #container_quotes {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0;
   }
-  #quotes_box{
+  #quotes_box {
     padding: 20px;
   }
-    }
+}
