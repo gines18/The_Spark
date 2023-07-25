@@ -9,7 +9,6 @@
   margin-top: 10px;
 }
 
-
 #quotes_box {
   display: flex;
   justify-content: center;
@@ -19,18 +18,6 @@
   gap: 30px;
   z-index: 2;
 }
-@media (max-width: 1024px){
-
-#container_quotes{
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-}
-#quotes_box{
-  padding: 20px;
-}
-  }
 
 #container_quotes:before {
   content: "";
@@ -47,10 +34,31 @@
     #c1b6bb 5px,
     #e5e5f7 5px,
     #e5e5f7 25px
-  );
-}
+    );
+  }
+  
+  #quote_img {
+    width: 200px;
+  }
+  
+  @media (max-width: 390px){
+    #container_quotes{
+      font-size: 0.7rem;
+    }
+    #quote_img{
+      width: 150px;
 
-#quote_img {
-  width: 200px;
-}
-
+    }
+  }
+  
+  @media (max-width: 1024px){
+  #container_quotes{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  #quotes_box{
+    padding: 20px;
+  }
+    }
