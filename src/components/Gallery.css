@@ -78,6 +78,13 @@
     color: red;
   }
 
+  @media (max-width: 768px){
+    #gallery_container_header p{
+      text-align: center;
+    }
+
+  }
+
   #gallery_container div{
     font-size: 1.3rem;
     position: relative;
