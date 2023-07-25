@@ -2,6 +2,10 @@ import React from "react";
 import "./Info.css";
 
 function Info() {
+  let Call = () => {
+    window.location.href = `tel:${4488020088}`;
+  };
+
   return (
     <>
       <div id="info_container">
@@ -16,7 +20,9 @@ function Info() {
             This includes a free and confidential counselling helpline on
             <strong> 0808 802 0088.</strong>
             <br />
-            <button id="info_button_contact">Contact Us</button>
+            <button id="info_button_contact" onClick={Call}>
+              Contact Us
+            </button>
             <button id="info_button_about">About Us</button>
           </p>
         </div>
