@@ -25,6 +25,20 @@ z-index: 1;
     border-radius: 6px;
 }
 
+#help_button p{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+margin: 0;
+    
+}
+@media (max-width: 390px){
+    #help_container{
+padding: 30px;
+    }
+}
+
 @media (max-width: 768px){
     #help_container{
        display: flex;
@@ -36,12 +50,3 @@ z-index: 1;
     }
 }
 
-
-#help_button p{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: row;
-margin: 0;
-    
-}
