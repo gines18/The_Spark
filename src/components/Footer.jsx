@@ -51,9 +51,9 @@ let data_footer = [
 export default function Footer() {
   return (
     <div id="footer_container">
-      {data_footer.map((item) => (
-        <div>
-          <p id="footer_underline">{item.header}</p>
+      {data_footer.map((item, index) => (
+        <div key={index}>
+          <p  id="footer_underline">{item.header}</p>
           <br />
           <p>{item.one}</p>
           <p>{item.two}</p>

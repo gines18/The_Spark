@@ -48,8 +48,8 @@ function Services() {
         <p>We’ve been providing counselling and support for over 55 years.</p>
       </div>
       <div id="services_container">
-        {data.map((item) => (
-          <Card sx={{ maxWidth: 345, minHeight: 340 }}>
+        {data.map((item, index) => (
+          <Card key={index} sx={{ maxWidth: 345, minHeight: 340 }}>
             <CardActionArea>
               <CardMedia
                 component="img"

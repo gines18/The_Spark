@@ -11,8 +11,8 @@ let data_gallery = [
 function Gallery() {
   return (
     <>
-      {data_gallery.map((item) => (
-        <div id="gallery_container_header">
+      {data_gallery.map((item, index) => (
+        <div key={index} id="gallery_container_header">
           <p>{item.header}</p>
           <h1>{item.text}</h1>
         </div>

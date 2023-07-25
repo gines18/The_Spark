@@ -40,16 +40,16 @@ let data_blog_card = [
 function Blog() {
   return (
     <>
-      {data_blog.map((item) => (
-        <div id="gallery_container_header">
+      {data_blog.map((item, index) => (
+        <div key={index} id="gallery_container_header">
           <p>{item.header_blog}</p>
           <h1>{item.text_blog}</h1>
         </div>
       ))}
 
       <div id="services_container_blog">
-        {data_blog_card.map((item) => (
-          <Card sx={{ maxWidth: 345, minHeight: 410 }}>
+        {data_blog_card.map((item, index) => (
+          <Card key={index} sx={{ maxWidth: 345, minHeight: 410 }}>
             <CardActionArea>
               <CardMedia
                 component="img"

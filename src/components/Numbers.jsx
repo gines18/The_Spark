@@ -24,8 +24,8 @@ function Numbers() {
   return (
     <>
       <div id="numbers_container">
-        {data_numbers.map((item) => (
-          <div id="numbers_data">
+        {data_numbers.map((item, index) => (
+          <div key={index} id="numbers_data">
             <h1>{item.number}</h1>
             <p>{item.text}</p>
           </div>
