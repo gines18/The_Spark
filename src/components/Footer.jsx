@@ -3,8 +3,22 @@ import React from 'react'
 import './Footer.css'
 
 let data_footer = [
+
+
     {
         header: "Contact Us",
+        one: '100 Wellington Street',
+        two: 'Glasgow',
+        three: 'G2 6DH',
+        four: '',
+        five: '0141 222 21 66',
+        six: '',
+        seven: '',
+     
+       
+    }, 
+    {
+        header: "Our Services",
         one: 'Individual Counselling',
         two: 'Couples Counselling',
         three: 'Marriage Counselling',
@@ -15,7 +29,7 @@ let data_footer = [
         eight: 'Training Courses',
     },
     {
-        header: "Our Services",
+        header: "About Us",
         one: 'The Spark Blog',
         two: 'Frequently Asked Questions',
         three: 'Support Us',
@@ -23,10 +37,10 @@ let data_footer = [
         five: 'Meet the Team',
         six: 'Opening Hours',
         seven: 'Counselling Locations',
-        eight: undefined,
+        eight: " ",
     },
     {
-        header: "About Us",
+        header: "Legal Stuff",
         one: 'Confidentiality Promise',
         two: 'Child & Vulnerable Adult',
         three: 'Protection',
@@ -34,7 +48,7 @@ let data_footer = [
         five: 'Cookie Policy',
         six: 'Terms & Conditions',
         seven: 'Complaints Procedure',
-        eight: undefined,
+        eight: " ",
     },
   
 ]
@@ -51,11 +65,11 @@ export default function Footer() {
             <p>{item.one}</p>
             <p>{item.two}</p>
             <p>{item.three}</p>
-            <p>{item.four}</p>
+            {item.data_footer === " " ? <p>{item.four}</p> : <p></p>}
             <p>{item.five}</p>
-            <p>{item.six}</p>
-            <p>{item.seven}</p>
-            {item.eight !== undefined ? <p>{item.eight}</p> : <p></p>}
+            {item.data_footer === " " ? <p>{item.six}</p> : <p></p>}
+            {item.data_footer === " " ? <p>{item.seven}</p> : <p></p>}
+            {item.data_footer === " " ? <p>{item.eight}</p> : <p></p>}
            
         
         </div>
