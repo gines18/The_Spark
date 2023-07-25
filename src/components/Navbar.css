@@ -22,7 +22,6 @@ body {
   align-items: center;
   width: 700px;
   justify-content: space-around;
-
   margin: 0;
   height: 90px;
 }
@@ -60,6 +59,12 @@ li {
 #navbar_button:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+@media (max-width: 390px) {
+    li {
+      margin: 0 !important;
+  }
 }
 
 @media (max-width: 768px) {
