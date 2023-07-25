@@ -69,4 +69,11 @@
   #services_container_header_top {
     text-align: center;
   }
+  .popup{
+    position: fixed;
+    top: 300px;
+    left: 50px;
+    width: 300px;
+    height: 150px;
+    }
 }
