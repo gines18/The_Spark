@@ -12,6 +12,24 @@
     ;
 }
 
+@media (max-width: 768px){
+  #gallery_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    grid-template-areas: 
+    " img1 img1 img1 img1"
+    " img1 img1 img1 img1"
+    " img2 img2 img3 img3"
+    " img4 img4 img5 img5"
+    ;
+  }
+}
+
 #img1 {
     height: 400px;
     grid-area: img1;
