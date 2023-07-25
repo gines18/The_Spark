@@ -9,6 +9,29 @@
   margin-top: 10px;
 }
 
+
+#quotes_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px;
+  gap: 30px;
+  z-index: 2;
+}
+@media (max-width: 1024px){
+
+#container_quotes{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+#quotes_box{
+  padding: 20px;
+}
+  }
+
 #container_quotes:before {
   content: "";
   position: absolute;
@@ -31,12 +54,3 @@
   width: 200px;
 }
 
-#quotes_box {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  padding: 50px;
-  gap: 30px;
-  z-index: 2;
-}
