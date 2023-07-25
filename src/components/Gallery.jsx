@@ -20,19 +20,19 @@ function Gallery() {
 
       <div id="gallery_container">
         <div id="img1">
-          <span id="grid_description_img">Gallery</span>
+          <span id="grid_description_img">Counceling Theory</span>
         </div>
         <div id="img2">
-          <p>Gallery</p>
+          <p>Retail Councelling</p>
         </div>
         <div id="img3">
-          <p>Gallery</p>
+          <p>HND Councelling</p>
         </div>
         <div id="img4">
-          <p>Gallery</p>
+          <p>HNC Councelling</p>
         </div>
         <div id="img5">
-          <p>Gallery</p>
+          <p>COSCA Certificate</p>
         </div>
       </div>
     </>

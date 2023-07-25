@@ -49,7 +49,7 @@ function Blog() {
 
       <div id="services_container_blog">
         {data_blog_card.map((item, index) => (
-          <Card key={index} sx={{ maxWidth: 345, minHeight: 410 }}>
+          <Card id='blog_card' key={index} sx={{ maxWidth: 345, minHeight: 410 }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -66,7 +66,7 @@ function Blog() {
                 </Typography>
 
                 <Typography variant="body2" color="text.secondary">
-                  <a href={item.link} target="_blank">
+                  <a id="blog_link" href={item.link} target="_blank">
                     Read more
                   </a>
                 </Typography>

@@ -8,3 +8,13 @@
   background-color: #e9eaec;
   padding: 20px;
 }
+
+@media (max-width: 390px){
+  #blog_card{
+    max-width: 340px;
+    min-height: 350px !important; 
+  }
+  #blog_link{
+    text-decoration: none;
+  }
+}
