@@ -99,3 +99,17 @@ li {
     padding: 0;
   }
 }
+
+
+#popup_donation{
+ 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 10;
+}
