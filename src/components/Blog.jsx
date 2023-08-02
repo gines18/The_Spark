@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -38,6 +38,12 @@ let data_blog_card = [
 ];
 
 function Blog() {
+  const [showBox, setClicked] = useState(false);
+
+  function donate() {
+    setClicked(!showBox)
+}
+
   return (
     <>
       {data_blog.map((item, index) => (
@@ -81,7 +87,22 @@ function Blog() {
       </div>
 
       <div id="services_container_header_bottom">
-        <button id="info_button_services">View all posts</button>
+        <button id="info_button_services"  onClick={donate}>View all posts</button>
+        {showBox && ( 
+        <>
+        <div>
+      <p id="popup_donation">
+       <span id="navbar_donate_button" onClick={donate}>X</span>
+       <p>
+      This section is under maintenance!
+       </p> 
+        </p>
+    
+      </div>
+      
+      </>
+      
+      )}
       </div>
     </>
   );
