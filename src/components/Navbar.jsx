@@ -28,7 +28,19 @@ function Navbar() {
         </ul>
       
       {showBox && ( 
-      <p id="popup_donation">Thank you for help!</p>
+        <>
+        <div>
+      <p id="popup_donation">
+       <span id="navbar_donate_button" onClick={donate}>X</span>
+       <p>
+      Donations coming soon!
+       </p> 
+        </p>
+    
+      </div>
+      
+      </>
+      
       )}
     </div>
     </div>
