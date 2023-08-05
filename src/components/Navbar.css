@@ -83,7 +83,7 @@ li {
     padding-right: 30px;
     height: 120px;
     position: sticky;
-    top: 0;
+    top: 10px;
     background-color: white;
     z-index: 5;
   }
