@@ -71,6 +71,24 @@ li {
   }
 }
 
+@media (max-width: 1200px){
+  .navbar_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 5;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar_container {
     display: flex;
