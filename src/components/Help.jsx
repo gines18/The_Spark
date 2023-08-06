@@ -1,5 +1,6 @@
 import React from "react";
 import "./Help.css";
+import {motion} from 'framer-motion'
 
 function Help() {
 
@@ -9,7 +10,22 @@ function Help() {
 
   return (
     <>
-      <div id="help_container">
+      <motion.div id="help_container"
+      initial={{
+        y: "100px"
+      }}
+
+       whileInView={{
+          y: 0 ,
+          transition: {
+            duration: 3,
+          },
+        }}
+
+      
+      
+      
+      >
         <div>
           <h1>Need Help Now?</h1>
           <p>
@@ -22,7 +38,7 @@ function Help() {
         <div id="help_button">
           <p onClick={handleCall}>Call Now</p>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
