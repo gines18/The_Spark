@@ -42,8 +42,8 @@ function Blog() {
   const [showBox, setClicked] = useState(false);
 
   function donate() {
-    setClicked(!showBox)
-}
+    setClicked(!showBox);
+  }
 
   return (
     <>
@@ -54,23 +54,26 @@ function Blog() {
         </div>
       ))}
 
-      <motion.div id="services_container_blog"
-      
-      initial={{
-        opacity: 0.3,
-      }}
-      
-      whileInView={{
-        opacity: 1,
+      <motion.div
+        id="services_container_blog"
+        initial={{
+          opacity: 0.3,
+        }}
+        
+        whileInView={{
+          opacity: 1,
 
-        transition: {
-          duration: 4,
-        },
-      }}
-
+          transition: {
+            duration: 4,
+          },
+        }}
       >
         {data_blog_card.map((item, index) => (
-          <Card id='blog_card' key={index} sx={{ maxWidth: 345, minHeight: 410 }}>
+          <Card
+            id="blog_card"
+            key={index}
+            sx={{ maxWidth: 345, minHeight: 410 }}
+          >
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -102,22 +105,21 @@ function Blog() {
       </motion.div>
 
       <div id="services_container_header_bottom">
-        <button id="info_button_services"  onClick={donate}>View all posts</button>
-        {showBox && ( 
-        <>
-        <div>
-      <p id="popup_donation">
-       <span id="navbar_donate_button" onClick={donate}>X</span>
-       <p>
-      This section is under maintenance!
-       </p> 
-        </p>
-    
-      </div>
-      
-      </>
-      
-      )}
+        <button id="info_button_services" onClick={donate}>
+          View all posts
+        </button>
+        {showBox && (
+          <>
+            <div>
+              <p id="popup_donation">
+                <span id="navbar_donate_button" onClick={donate}>
+                  X
+                </span>
+                <p>This section is under maintenance!</p>
+              </p>
+            </div>
+          </>
+        )}
       </div>
     </>
   );

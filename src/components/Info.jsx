@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Info.css";
+import { motion } from "framer-motion";
 
 function Info() {
   let Call = () => {
@@ -9,8 +10,8 @@ function Info() {
   const [showBox, setClicked] = useState(false);
 
   function donate() {
-    setClicked(!showBox)
-}
+    setClicked(!showBox);
+  }
 
   return (
     <>
@@ -29,29 +30,43 @@ function Info() {
             <button id="info_button_contact" onClick={Call}>
               Contact Us
             </button>
-            <button id="info_button_about" onClick={donate}>About Us</button>
-            {showBox && ( 
-        <>
-        <div>
-      <p id="popup_donation">
-       <span id="navbar_donate_button" onClick={donate}>X</span>
-       <p>
-      This section is under maintenance!
-       </p> 
-        </p>
-    
-      </div>
-      
-      </>
-      
-      )}
+            <button id="info_button_about" onClick={donate}>
+              About Us
+            </button>
+            {showBox && (
+              <>
+                <div>
+                  <p id="popup_donation">
+                    <span id="navbar_donate_button" onClick={donate}>
+                      X
+                    </span>
+                    <p>This section is under maintenance!</p>
+                  </p>
+                </div>
+              </>
+            )}
           </p>
-          
         </div>
 
-        <div>
-          <img id="info_img" src="fireworks.png" alt="" />
-        </div>
+        
+          <motion.img 
+          id="info_img" 
+          src="fireworks.png" 
+          alt="spark img"
+
+                initial={{
+                  scale: 0.1
+                }}
+
+          whileInView={{
+          scale: 1,
+          transition: {
+            duration: 3,
+          },
+        }}
+       
+          />
+        
       </div>
     </>
   );

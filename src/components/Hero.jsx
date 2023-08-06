@@ -5,7 +5,8 @@ function Hero() {
   return (
     <>
       <div id="hero_container">
-        <img id="main_img" src="./help.jpeg" alt="" />
+        <img id="main_img" src="./help.jpeg" alt="" 
+        />
       </div>
     </>
   );
