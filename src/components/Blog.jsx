@@ -56,6 +56,7 @@ function Blog() {
 
       <motion.div
         id="services_container_blog"
+        
         initial={{
           opacity: 0.3,
         }}

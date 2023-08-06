@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Info.css";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function Info() {
   let Call = () => {
@@ -12,6 +13,10 @@ function Info() {
   function donate() {
     setClicked(!showBox);
   }
+
+  const [ref, inView] = useInView({
+    triggerOnce: true, // This ensures that the animation happens only once when the element comes into view
+  });
 
   return (
     <>
@@ -48,25 +53,24 @@ function Info() {
           </p>
         </div>
 
-        
-          <motion.img 
-          id="info_img" 
-          src="fireworks.png" 
+        <motion.img
+          id="info_img"
+          src="fireworks.png"
           alt="spark img"
-
-                initial={{
-                  scale: 0.1
-                }}
-
-          whileInView={{
-          scale: 1,
-          transition: {
-            duration: 3,
-          },
-        }}
-       
-          />
-        
+          initial={{
+            scale: 0.5,
+          }}
+          
+      
+            whileInView={{
+              scale: inView ? 0.1 : 1,
+            
+            }}
+  
+            transition={{
+              duration: 3,
+            }}
+        />
       </div>
     </>
   );

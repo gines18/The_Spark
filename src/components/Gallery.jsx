@@ -1,7 +1,7 @@
 import React from "react";
 import "./Gallery.css";
-
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 let data_gallery = [
   {
@@ -11,6 +11,9 @@ let data_gallery = [
 ];
 
 function Gallery() {
+    const [ref, inView] = useInView({
+    triggerOnce: true, // This ensures that the animation happens only once when the element comes into view
+  });
   return (
     <>
       {data_gallery.map((item, index) => (
@@ -26,13 +29,15 @@ function Gallery() {
           scale: 0.5,
         }}
         
-        whileInView={{
-          scale: 1,
+    
+          whileInView={{
+            scale: inView ? 0.1 : 1,
+          
+          }}
 
-          transition: {
-            duration: 2,
-          },
-        }}
+          transition={{
+            duration: 3,
+          }}
       >
         <div id="img1">
           <span id="grid_description_img">Counceling Theory</span>
