@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import "./Blog.css";
+import { motion } from "framer-motion";
 
 let data_blog = [
   {
@@ -53,7 +54,21 @@ function Blog() {
         </div>
       ))}
 
-      <div id="services_container_blog">
+      <motion.div id="services_container_blog"
+      
+      initial={{
+        opacity: 0.3,
+      }}
+      
+      whileInView={{
+        opacity: 1,
+
+        transition: {
+          duration: 4,
+        },
+      }}
+
+      >
         {data_blog_card.map((item, index) => (
           <Card id='blog_card' key={index} sx={{ maxWidth: 345, minHeight: 410 }}>
             <CardActionArea>
@@ -84,7 +99,7 @@ function Blog() {
             </CardActionArea>
           </Card>
         ))}
-      </div>
+      </motion.div>
 
       <div id="services_container_header_bottom">
         <button id="info_button_services"  onClick={donate}>View all posts</button>

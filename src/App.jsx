@@ -12,6 +12,7 @@ import Help from "./components/Help";
 import Numbers from "./components/Numbers";
 import Footer from "./components/Footer";
 
+
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
       <Help />
       <Numbers />
       <Footer />
+ 
     </>
   );
 }

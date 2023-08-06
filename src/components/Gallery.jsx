@@ -1,6 +1,8 @@
 import React from "react";
 import "./Gallery.css";
 
+import { motion } from "framer-motion";
+
 let data_gallery = [
   {
     header: "TRAINING THE NEXT GENERATION OF COUNSELLORS",
@@ -18,7 +20,20 @@ function Gallery() {
         </div>
       ))}
 
-      <div id="gallery_container">
+      <motion.div
+        id="gallery_container"
+        initial={{
+          scale: 0.5,
+        }}
+        
+        whileInView={{
+          scale: 1,
+
+          transition: {
+            duration: 2,
+          },
+        }}
+      >
         <div id="img1">
           <span id="grid_description_img">Counceling Theory</span>
         </div>
@@ -34,7 +49,7 @@ function Gallery() {
         <div id="img5">
           <p>COSCA Certificate</p>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
