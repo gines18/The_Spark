@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import "./Services.css";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 let data = [
   {
@@ -40,6 +41,12 @@ function Services() {
     setShowDivBox(!showDivBox);
   };
 
+
+
+
+
+
+
   return (
     <>
       <div id="services_container_header_top">
@@ -47,8 +54,26 @@ function Services() {
         <p>You’re in safe hands.</p>
         <p>We’ve been providing counselling and support for over 55 years.</p>
       </div>
-      <div id="services_container">
+      
+      <motion.div
+        id="services_container"
+        
+        >
         {data.map((item, index) => (
+
+          <motion.div
+
+
+          whileInView={{
+            scale: [0.5, 1],
+            transition: {
+              duration: 2,
+            },
+          }}
+  
+        
+          >
+
           <Card key={index} sx={{ maxWidth: 345, minHeight: 340 }}>
             <CardActionArea>
               <CardMedia
@@ -72,8 +97,10 @@ function Services() {
               </Button>
             </CardActions>
           </Card>
+
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
       <div id="services_container_header_bottom">
         <p>Looking for something else?</p>
         <button id="info_button_services" onClick={handleButtonClick}>

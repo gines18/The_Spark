@@ -36,7 +36,7 @@ function Gallery() {
           }}
 
           transition={{
-            duration: 3,
+            duration: 2.5,
           }}
       >
         <div id="img1">
