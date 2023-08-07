@@ -13,25 +13,25 @@ let data = [
     img: "./img1.jpeg",
     header: "Counselling for Individuals",
     info: "Explore your thoughts, feelings, and behaviors in a safe and confidential environment with individual counselling.",
-    link: "Learn more",
+    link: "Read more",
   },
   {
     img: "./img2.jpeg",
     header: "Counselling for Couples",
     info: "Dedicated support for couples to address challenges, improve communication, and nurture a stronger, more fulfilling relationship.",
-    link: "Learn more",
+    link: "Read more",
   },
   {
     img: "./img3.jpeg",
     header: "Counselling for Children",
     info: "Counseling provides a safe space for children and young people to express themselves, explore their emotions, and develop coping strategies.",
-    link: "Learn more",
+    link: "Read more",
   },
   {
     img: "./img4.jpeg",
     header: "Counselling for Parents",
     info: "Family counselling can address a wide range of issues including relationship problems, communication breakdowns, and behavioural difficulties.",
-    link: "Learn more",
+    link: "Read more",
   },
 ];
 
@@ -82,7 +82,9 @@ function Services() {
               </CardActionArea>
               <CardActions>
                 <Button size="small" color="primary">
-                  {item.link}
+                 <a id="link" href="http://www.google.com" target="_blank"> {item.link}</a>
+                 
+               
                 </Button>
               </CardActions>
             </Card>

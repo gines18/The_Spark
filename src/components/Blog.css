@@ -9,12 +9,13 @@
   padding: 20px;
 }
 
+#blog_link{
+  text-decoration: none;
+}
+
 @media (max-width: 390px){
   #blog_card{
     max-width: 340px;
     min-height: 350px !important; 
-  }
-  #blog_link{
-    text-decoration: none;
   }
 }
