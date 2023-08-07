@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+
   background-color: black;
   color: white;
   padding: 50px;
@@ -15,9 +15,4 @@
   color: black;
 }
 
-@media (max-width: 390px) {
-  #footer_underline {
-    background-color: white;
-    color: black;
-  }
-}
+
