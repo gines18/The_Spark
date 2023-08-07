@@ -15,6 +15,7 @@ function Help() {
         initial={{
           y: "100px",
         }}
+        viewport={{ once: true }}
         whileInView={{
           y: 0,
           transition: {

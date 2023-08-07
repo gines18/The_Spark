@@ -12,7 +12,7 @@ let data_gallery = [
 
 function Gallery() {
     const [ref, inView] = useInView({
-    triggerOnce: true, // This ensures that the animation happens only once when the element comes into view
+   
   });
   return (
     <>
@@ -29,7 +29,7 @@ function Gallery() {
           scale: 0.5,
         }}
         
-    
+        viewport={{ once: true }}
           whileInView={{
             scale: inView ? 0.1 : 1,
           

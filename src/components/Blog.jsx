@@ -60,7 +60,7 @@ function Blog() {
         initial={{
           opacity: 0.3,
         }}
-        
+        viewport={{ once: true }}
         whileInView={{
           opacity: 1,
 

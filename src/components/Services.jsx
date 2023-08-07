@@ -56,11 +56,13 @@ function Services() {
         {data.map((item, index) => (
           <motion.div
             key={index}
+            viewport={{ once: true }}
             whileInView={{
               scale: [0.5, 1],
               transition: {
                 duration: 2,
               },
+              
             }}
           >
             <Card key={index} sx={{ maxWidth: 345, minHeight: 340 }}>
