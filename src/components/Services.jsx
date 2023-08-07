@@ -41,12 +41,6 @@ function Services() {
     setShowDivBox(!showDivBox);
   };
 
-
-
-
-
-
-
   return (
     <>
       <div id="services_container_header_top">
@@ -54,50 +48,44 @@ function Services() {
         <p>You’re in safe hands.</p>
         <p>We’ve been providing counselling and support for over 55 years.</p>
       </div>
-      
+
       <motion.div
         id="services_container"
         
         >
         {data.map((item, index) => (
-
           <motion.div
-
-
-          whileInView={{
-            scale: [0.5, 1],
-            transition: {
-              duration: 2,
-            },
-          }}
-  
-        
+            key={index}
+            whileInView={{
+              scale: [0.5, 1],
+              transition: {
+                duration: 2,
+              },
+            }}
           >
-
-          <Card key={index} sx={{ maxWidth: 345, minHeight: 340 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={item.img}
-                alt="green iguana"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {item.header}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {item.info}
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button size="small" color="primary">
-                {item.link}
-              </Button>
-            </CardActions>
-          </Card>
-
+            <Card key={index} sx={{ maxWidth: 345, minHeight: 340 }}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={item.img}
+                  alt="green iguana"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {item.header}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {item.info}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button size="small" color="primary">
+                  {item.link}
+                </Button>
+              </CardActions>
+            </Card>
           </motion.div>
         ))}
       </motion.div>
