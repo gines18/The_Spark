@@ -13,7 +13,7 @@ function Navbar() {
     <>
     <div className="navbar_container">
       <div>
-        <img src="./fireworks.png" style={{ width: "50px" }} alt="" />
+        <img id="spark" src="./fireworks.png" style={{ width: "50px" }} alt="" />
       </div>
 
       <div className="navbar_menu">

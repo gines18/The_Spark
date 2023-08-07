@@ -22,8 +22,8 @@ function App() {
       <Services />
       <Quotes />
       <Gallery />
-      <Blog />
       <Logo />
+      <Blog />
       <Help />
       <Numbers />
       <Footer />
