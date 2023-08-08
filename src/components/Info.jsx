@@ -21,7 +21,7 @@ function Info() {
   return (
     <>
       <div id="info_container">
-        <div>
+        <div id="counseling-about">
           <h1>Igniting Change</h1>
           <p>
             The Spark provides counselling and mental health support services

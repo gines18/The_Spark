@@ -43,8 +43,9 @@ function Services() {
 
   return (
     <>
-      <div id="services_container_header_top">
-        <h1>Our Counselling Services</h1>
+    <div id="counseling-section">
+          <div id="services_container_header_top">
+        <h1 >Our Counselling Services</h1>
         <p>You’re in safe hands.</p>
         <p>We’ve been providing counselling and support for over 55 years.</p>
       </div>
@@ -112,6 +113,7 @@ function Services() {
           </p>
         </div>
       )}
+      </div>
     </>
   );
 }

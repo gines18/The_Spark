@@ -15,7 +15,8 @@ function Gallery() {
    
   });
   return (
-    <>
+    <> 
+    <div id="counseling-training">
       {data_gallery.map((item, index) => (
         <div key={index} id="gallery_container_header">
           <p>{item.header}</p>
@@ -55,6 +56,7 @@ function Gallery() {
           <p>COSCA Certificate</p>
         </div>
       </motion.div>
+      </div>
     </>
   );
 }

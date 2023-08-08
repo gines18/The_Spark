@@ -37,6 +37,7 @@ body {
 .navbar_menu li {
   display: inline;
   margin: 15px;
+  cursor: pointer;
 }
 
 ul {
