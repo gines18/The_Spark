@@ -5,9 +5,14 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 function Navbar() {
   const [showBox, setClicked] = useState(false);
+  const [showBoxSearch, setClickedSearch] = useState(false);
+
 
   function donate() {
     setClicked(!showBox);
+  }
+  function search() {
+    setClickedSearch(!showBoxSearch);
   }
 
   return (
@@ -25,7 +30,7 @@ function Navbar() {
         <div className="navbar_menu">
           <ul>
             <li>
-              <img src="./loupe.png" style={{ width: "11px" }} alt="" />
+              <img src="./loupe.png" onClick={search} style={{ width: "11px" }} alt="" />
             </li>
 
             <li>
@@ -57,6 +62,18 @@ function Navbar() {
                     X
                   </span>
                   <p>Donations coming soon!</p>
+                </p>
+              </div>
+            </>
+          )}
+          {showBoxSearch && (
+            <>
+              <div>
+                <p id="popup_donation">
+                  <span id="navbar_donate_button" onClick={search}>
+                    X
+                  </span>
+                  <p>We are working to implement search bar on this website!</p>
                 </p>
               </div>
             </>
