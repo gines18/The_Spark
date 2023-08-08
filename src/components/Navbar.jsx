@@ -29,17 +29,18 @@ function Navbar() {
             </li>
 
             <li>
-              <ScrollLink to="counseling-section" smooth={true} offset={-150}>
+              <ScrollLink to="counseling-section" 
+              smooth={true} offset={-150} duration={2}>
                 Counseling
               </ScrollLink>
             </li>
             <li>
-              <ScrollLink to="counseling-training" smooth={true} offset={-150}>
+              <ScrollLink to="counseling-training"  smooth={true} offset={-150} duration={2}>
                 Training
               </ScrollLink>
             </li>
             <li>
-              <ScrollLink to="counseling-about" smooth={true} offset={-150}>
+              <ScrollLink to="counseling-about"  smooth={true} offset={-150} duration={2}>
                 About Us
               </ScrollLink>
             </li>
