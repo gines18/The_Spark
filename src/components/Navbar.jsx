@@ -1,19 +1,25 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-
+import { motion } from "framer-motion";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
+let data = [
+  {
+    x: "X",
+    text: "Donations coming soon!",
+  },
+];
+
 function Navbar() {
-  const [showBox, setClicked] = useState(false);
-  const [showBoxSearch, setClickedSearch] = useState(false);
+  const [showDonationPopup, setShowDonationPopup] = useState(false);
+  const [showBoxSearch, setShowBoxSearch] = useState(false);
 
-
-  function donate() {
-    setClicked(!showBox);
+  function toggleDonationPopup() {
+    setShowDonationPopup(!showDonationPopup);
   }
-  
-  function search() {
-    setClickedSearch(!showBoxSearch);
+
+  function toggleSearchPopup() {
+    setShowBoxSearch(!showBoxSearch);
   }
 
   return (
@@ -30,53 +36,80 @@ function Navbar() {
 
         <div className="navbar_menu">
           <ul>
-            <li onClick={search}>
+            <li onClick={toggleSearchPopup}>
               <img src="./loupe.png" style={{ width: "11px" }} alt="" />
             </li>
 
             <li>
-              <ScrollLink to="counseling-section" 
-              smooth={true} offset={-120} duration={10} easing="linear">
+              <ScrollLink
+                to="counseling-section"
+                smooth={true}
+                offset={-120}
+                duration={10}
+                easing="linear"
+              >
                 Counseling
               </ScrollLink>
             </li>
             <li>
-              <ScrollLink to="counseling-training"  smooth={true} offset={-120} duration={10} easing="linear">
+              <ScrollLink
+                to="counseling-training"
+                smooth={true}
+                offset={-120}
+                duration={10}
+                easing="linear"
+              >
                 Training
               </ScrollLink>
             </li>
             <li>
-              <ScrollLink to="counseling-about"  smooth={true} offset={-120} duration={10} easing="linear">
+              <ScrollLink
+                to="counseling-about"
+                smooth={true}
+                offset={-120}
+                duration={10}
+                easing="linear"
+              >
                 About Us
               </ScrollLink>
             </li>
-            <li id="navbar_button" onClick={donate}>
+            <li id="navbar_button" onClick={toggleDonationPopup}>
               Donate
             </li>
           </ul>
 
-          {showBox && (
-            <>
-          
-                <p id="popup_donation">
-                  <span id="navbar_donate_button" onClick={donate}>
-                    X
+          {showDonationPopup && (
+            <motion.p
+              id="donation-popup"
+              initial={{
+                opacity: 1,
+                x: "-100vh",
+              }}
+              animate={{
+                x: -100,
+                opacity: 1,
+
+                transition: { duration: 0.5 },
+              }}
+            >
+              {data.map((item, index) => (
+                <span key={index}>
+                  <span id="close-popup" onClick={toggleDonationPopup}>
+                    {item.x}
                   </span>
-                 Donations coming soon!
-                </p>
-              
-            </>
+                  {item.text}
+                </span>
+              ))}
+            </motion.p>
           )}
           {showBoxSearch && (
             <>
-             
-                <p id="popup_donation">
-                  <span id="navbar_donate_button" onClick={search}>
-                    X
-                  </span>
-                  We are working to implement search bar on this website!
-                </p>
-      
+              <p id="donation-popup">
+                <span id="close-popup" onClick={toggleSearchPopup}>
+                  X
+                </span>
+                We are working to implement search bar on this website!
+              </p>
             </>
           )}
         </div>
