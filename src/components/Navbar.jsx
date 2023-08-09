@@ -11,6 +11,7 @@ function Navbar() {
   function donate() {
     setClicked(!showBox);
   }
+  
   function search() {
     setClickedSearch(!showBoxSearch);
   }
@@ -29,8 +30,8 @@ function Navbar() {
 
         <div className="navbar_menu">
           <ul>
-            <li>
-              <img src="./loupe.png" onClick={search} style={{ width: "11px" }} alt="" />
+            <li onClick={search}>
+              <img src="./loupe.png" style={{ width: "11px" }} alt="" />
             </li>
 
             <li>
@@ -56,26 +57,26 @@ function Navbar() {
 
           {showBox && (
             <>
-              <div>
+          
                 <p id="popup_donation">
                   <span id="navbar_donate_button" onClick={donate}>
                     X
                   </span>
-                  <p>Donations coming soon!</p>
+                 Donations coming soon!
                 </p>
-              </div>
+              
             </>
           )}
           {showBoxSearch && (
             <>
-              <div>
+             
                 <p id="popup_donation">
                   <span id="navbar_donate_button" onClick={search}>
                     X
                   </span>
-                  <p>We are working to implement search bar on this website!</p>
+                  We are working to implement search bar on this website!
                 </p>
-              </div>
+      
             </>
           )}
         </div>
